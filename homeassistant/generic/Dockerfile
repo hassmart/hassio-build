@@ -11,7 +11,7 @@ RUN apk add --no-cache \
         bluez-dev libffi-dev libressl-dev glib-dev eudev-dev \
         libxml2-dev libxslt-dev libpng-dev libjpeg-turbo-dev tiff-dev \
         autoconf automake cups-dev \
-    && git clone --depth 1 --branch $BUILD_VERSION https://github.com/home-assistant/home-assistant homeassistant \
+    && git clone --depth 1 --branch $BUILD_VERSION https://github.com/hassmart/home-assistant homeassistant \
     && sed -i "s|# pytradfri|pytradfri|g" homeassistant/requirements_all.txt \
     && sed -i "s|# pybluez|pybluez|g" homeassistant/requirements_all.txt \
     && sed -i "s|# bluepy|bluepy|g" homeassistant/requirements_all.txt \
