@@ -7,5 +7,5 @@ Please use the installer to do that.
 Run as root:
 
 ```bash
-curl -sL https://raw.githubusercontent.com/home-assistant/hassio-build/master/generic-hc/update-manual | bash -
+curl -sL https://raw.githubusercontent.com/hassmart/hassio-build/master/generic-hc/update-manual | bash -
 ```
