@@ -17,4 +17,6 @@ runSupervisor() {
         %%SUPERVISOR_IMAGE%%
 }
 
+sleep 60
+
 ([ "$HASSIO_IMAGE_ID" == "$HASSIO_CONTAINER_IMAGE_ID" ] && docker start --attach hassio_supervisor) || runSupervisor

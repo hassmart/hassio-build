@@ -1,8 +1,8 @@
 [Unit]
 Description=Hass.io supervisor
-Requires=docker.service hassio-hc.service
+Requires=network-online.target docker.service hassio-hc.service
 Wants=hassio-hc.service
-After=docker.service hassio-hc.service
+After=network-online.target docker.service hassio-hc.service
 
 [Service]
 Type=simple
